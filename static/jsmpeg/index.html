@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio</title>
+</head>
+<body>
+<canvas id="video-canvas" style="width: 0;height: 0;position: fixed"></canvas>
+<script type="text/javascript" src="jsmpeg.min.js"></script>
+<script type="text/javascript">
+    var canvas = document.getElementById('video-canvas');
+    var url = 'ws://' + window.location.hostname + ":" + window.location.port + '/audio';
+    var player = new JSMpeg.Player(url, {
+        canvas: canvas, audioBufferSize: 128 * 64,
+        autoplay: true, pauseWhenHidden: false,
+    });
+    document.addEventListener('touchstart', function () {
+        player.audioOut.unlock(function () {
+            alert('unlocked!');
+        });
+    });
+</script>
+</body>
+</html>
