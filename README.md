@@ -1,6 +1,10 @@
 # novnc support audio
 > My solution is to use FFmpeg + JSMpeg
 
+### DEMO
+```
+docker run -d --name vnc -p 8888:8888 -e "ENABLE_VNC=true" -e "ENABLE_VNC_AUDIO=true" wuyu191287278/vnc:chrome_91.0
+```
 
 ### Install ffmpeg
 ```
