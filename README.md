@@ -6,15 +6,24 @@
 docker run -d --name vnc -p 8888:8888 -e "ENABLE_VNC=true" -e "ENABLE_VNC_AUDIO=true" wuyu191287278/vnc:chrome_91.0
 ```
 
-### Install ffmpeg
+### Linux
+
+#### Install ffmpeg
 ```
 sudo apt-get -qqy install ffmpeg
 ```
 
-### Start Pulse Audio
+#### Start Pulse Audio
 ```
 pulseaudio --start --exit-idle-time=-1
 ```
+
+
+
+### Windows 
+
+#### Install [screen-capture-recorder-to-video-windows-free](https://github.com/rdp/screen-capture-recorder-to-video-windows-free) To capture windows audio
+
 
 ### VNC,UDP proxy
 
