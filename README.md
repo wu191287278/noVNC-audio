@@ -18,8 +18,6 @@ sudo apt-get -qqy install ffmpeg
 pulseaudio --start --exit-idle-time=-1
 ```
 
-
-
 ### Windows 
 
 #### Install [screen-capture-recorder-to-video-windows-free](https://github.com/rdp/screen-capture-recorder-to-video-windows-free) To capture windows audio
